@@ -14,7 +14,6 @@ public class EmployeePayrollService{
     }
 
 
-
     public static  void main(String[]args)
     {
         ArrayList<EmployeePayRollData> employeePayrollList=new ArrayList<>();
