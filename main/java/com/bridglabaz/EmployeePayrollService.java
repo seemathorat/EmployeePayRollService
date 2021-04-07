@@ -5,6 +5,12 @@ import java.util.Scanner;
 
 public class EmployeePayrollService{
 
+    public void writeEmployeePayRollData(IoService fileIo) {
+    }
+
+    public void printData(IoService fileIo) {
+    }
+
     public enum IoService {CONSOLE_IO,FILE_IO,DB_IO,REST_IO}
     private List<EmployeePayRollData> employeePayrollList;
 
@@ -28,7 +34,7 @@ public class EmployeePayrollService{
         System.out.println("Enter Employee name:");
         String name=consoleInputReader.next();
         System.out.println("Enter Employee Salary:");
-        double salary =consoleInputReader.nextDouble();
+        int salary =consoleInputReader.nextInt();
         employeePayrollList.add(new EmployeePayRollData(id,name,salary));
     }
     private  void writeEmployeePayrollData()
